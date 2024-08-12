@@ -1,2 +1,2 @@
 # My nvim setup
-my nvim config for keyboard only programming experience
+my nvim config for a keyboard only programming experience
