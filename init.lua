@@ -1,9 +1,3 @@
--- indentation and tabs
-vim.o.expandtab = true
-vim.o.tabstop = 2
-vim.o.softtabstop = 2
-vim.o.shiftwidth = 2
-vim.g.mapleader = " "
 -- lazy package manager download
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -62,3 +56,5 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- / highlighting keymap
 vim.keymap.set('n', '<leader>/', ':nohlsearch<CR>', { noremap = true, silent = true })
+-- file explorer keymaps
+vim.keymap.set('n', '<leader>e', ':Neotree focus filesystem float toggle<CR>',{ noremap = true, silent = true} )
