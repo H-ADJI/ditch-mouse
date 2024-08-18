@@ -15,6 +15,7 @@ return {
 					"lua_ls",
 					"ruff",
 					"gopls",
+					"jqls",
 				},
 			})
 		end,
