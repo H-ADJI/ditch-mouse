@@ -2,6 +2,8 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
+      { "<leader>gS", "<cmd>Telescope git_branches<cr>", desc = "git switch branch" },
+      { "<leader>mc", "<cmd>Telescope colorscheme<cr>", desc = "change colorscheme" },
       {
         "<leader>fp",
         function()
@@ -11,6 +13,11 @@ return {
       },
     },
     opts = {
+      pickers = {
+        colorscheme = {
+          enable_preview = true,
+        },
+      },
       defaults = {
         layout_strategy = "horizontal",
         layout_config = { prompt_position = "top" },
