@@ -1,15 +1,20 @@
 return {
   "williamboman/mason.nvim",
-  keys = {
-    { "<leader>mm", "<cmd>Mason<cr>", desc = "mason info" },
-  },
   opts = {
     ensure_installed = {
-      "stylua",
+      -- python stuff
+      "ruff-lsp",
+      "pyright",
+      "ruff",
+      "black",
+      -- golang stuff
+      "gopls",
+      -- other stuff
+      "dockerfile-language-server",
+      "prettierd",
       "shellcheck",
       "shfmt",
-      "ruff",
-      "gopls",
+      "stylua",
     },
   },
 }

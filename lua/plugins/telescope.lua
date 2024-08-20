@@ -3,7 +3,6 @@ return {
     "nvim-telescope/telescope.nvim",
     keys = {
       { "<leader>gS", "<cmd>Telescope git_branches<cr>", desc = "git switch branch" },
-      { "<leader>mc", "<cmd>Telescope colorscheme<cr>", desc = "change colorscheme" },
       {
         "<leader>fp",
         function()
@@ -25,5 +24,15 @@ return {
         winblend = 0,
       },
     },
+  },
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    keys = {
+      { "<leader>sB", ":Telescope file_browser path=%:p:h <CR>", desc = "browse files" },
+    },
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+    config = function()
+      require("telescope").load_extension("file_browser")
+    end,
   },
 }
