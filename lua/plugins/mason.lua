@@ -10,6 +10,7 @@ return {
       -- golang stuff
       "gopls",
       -- other stuff
+      "clangd",
       "dockerfile-language-server",
       "prettierd",
       "shellcheck",
