@@ -2,6 +2,11 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
+      {
+        "<leader>fu",
+        "<cmd> Telescope find_files find_command=rg,--ignore,--hidden,--files,-u<cr>",
+        desc = "unrestricted find",
+      },
       { "<leader>gS", "<cmd>Telescope git_branches<cr>", desc = "git switch branch" },
       {
         "<leader>fp",
