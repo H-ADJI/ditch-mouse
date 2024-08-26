@@ -3,7 +3,6 @@ return {
   opts = {
     ensure_installed = {
       -- python stuff
-      "ruff-lsp",
       "pyright",
       "ruff",
       "black",
