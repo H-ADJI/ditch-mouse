@@ -9,6 +9,7 @@ return {
       -- golang stuff
       "gopls",
       -- javascript
+      "typescript-language-server",
       "eslint-lsp",
       -- other stuff
       "clangd",
