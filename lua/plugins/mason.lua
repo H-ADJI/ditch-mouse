@@ -8,6 +8,8 @@ return {
       "black",
       -- golang stuff
       "gopls",
+      -- javascript
+      "eslint-lsp",
       -- other stuff
       "clangd",
       "dockerfile-language-server",
