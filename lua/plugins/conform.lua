@@ -6,7 +6,17 @@ return {
   },
   opts = {
     log_level = vim.log.levels.DEBUG,
-    formatters_by_ft = { python = { "black" }, ["_"] = { "prettierd", "shfmt" } },
+    formatters_by_ft = {
+      python = { "black" },
+      html = { "prettierd" },
+      css = { "prettierd" },
+      json = { "prettierd" },
+      yaml = { "prettierd" },
+      javascript = { "prettierd" },
+      markdown = { "prettierd" },
+      scss = { "prettierd" },
+      ["_"] = { "shfmt" },
+    },
     formatters = {
       black = {
         prepend_args = { "-l", "120" },
