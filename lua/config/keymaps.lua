@@ -5,3 +5,4 @@ vim.keymap.set({ "n", "v", "i", "x" }, "<left>", '<cmd>echo "Use vim motion !"<C
 vim.keymap.set({ "n", "v", "i", "x" }, "<right>", '<cmd>echo "Use vim motion !"<CR>')
 vim.keymap.set({ "n", "v", "i", "x" }, "<up>", '<cmd>echo "Use vim motion !"<CR>')
 vim.keymap.set({ "n", "v", "i", "x" }, "<down>", '<cmd>echo "Use vim motion !"<CR>')
+vim.keymap.set({ "v", "x" }, "<leader>cn", ":CarbonNow<CR>", { silent = true })
