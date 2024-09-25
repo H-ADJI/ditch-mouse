@@ -8,6 +8,7 @@ return {
     log_level = vim.log.levels.DEBUG,
     formatters_by_ft = {
       python = { "black" },
+      -- sql = { "sqlfmt" },
       html = { "prettierd" },
       css = { "prettierd" },
       json = { "prettierd" },
