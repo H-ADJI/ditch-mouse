@@ -20,7 +20,7 @@ return {
       "clangd",
       "htmx-lsp",
       "sqlfluff",
-      -- "sqlfmt",
+      "sql-formatter",
       "dockerfile-language-server",
       "prettierd",
       "shellcheck",

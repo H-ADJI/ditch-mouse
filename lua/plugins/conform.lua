@@ -9,7 +9,7 @@ return {
     formatters_by_ft = {
       python = { "black" },
       go = { "gopls", "golines", "goimports", "gospel" },
-      -- sql = { "sqlfmt" },
+      sql = { "sql_formatter" },
       html = { "prettierd" },
       css = { "prettierd" },
       json = { "prettierd" },
@@ -22,6 +22,11 @@ return {
     formatters = {
       black = {
         prepend_args = { "-l", "120" },
+      },
+      sql_formatter = {
+        command = "sql-formatter",
+        args = { "--config", ".sql-formatter.json" }, -- Adjust path to your SQL formatter config if needed
+        stdin = true,
       },
     },
   },
