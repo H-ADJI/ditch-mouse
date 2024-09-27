@@ -8,6 +8,10 @@ return {
       "black",
       -- golang stuff
       "gopls",
+      "gospel",
+      "iferr",
+      "goimports",
+      "golines",
       "templ",
       -- javascript
       "typescript-language-server",
