@@ -19,7 +19,7 @@ return {
       -- other stuff
       "clangd",
       "htmx-lsp",
-      "sqlfluff",
+      -- "sqlfluff",
       "sql-formatter",
       "dockerfile-language-server",
       "prettierd",
