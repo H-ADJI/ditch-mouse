@@ -8,7 +8,6 @@ return {
       "black",
       -- golang stuff
       "gopls",
-      "gospel",
       "iferr",
       "goimports",
       "golines",

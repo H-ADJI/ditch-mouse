@@ -8,7 +8,7 @@ return {
     log_level = vim.log.levels.DEBUG,
     formatters_by_ft = {
       python = { "black" },
-      go = { "gopls", "golines", "goimports", "gospel" },
+      go = { "gofmt", "golines", "goimports" },
       sql = { "sql_formatter" },
       html = { "prettierd" },
       css = { "prettierd" },
