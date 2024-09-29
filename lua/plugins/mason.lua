@@ -21,6 +21,7 @@ return {
       -- "sqlfluff",
       "sql-formatter",
       "dockerfile-language-server",
+      "docker-compose-language-service",
       "prettierd",
       "shellcheck",
       "shfmt",
